@@ -1,0 +1,32 @@
+{
+  "name": "escpos-server",
+  "version": "1.0.0",
+  "description": "Node ESCPOS Printer Server",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server.js",
+    "api": "node api.js",
+    "start": "npm-run-all --parallel server api",
+    "bt:device": "node bt.device.js",
+    "bt:print": "node bt.print.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kedeka/escpos-server.git"
+  },
+  "author": "riskihajar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kedeka/escpos-server/issues"
+  },
+  "homepage": "https://github.com/kedeka/escpos-server#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "escpos": "git+https://github.com/song940/node-escpos.git#v2",
+    "express": "^4.18.1",
+    "https": "^1.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
